@@ -1,0 +1,22 @@
+
+
+.welcome-page {
+
+    position: fixed;
+    top:40%;
+    left:35%;
+}
+
+
+.welcome-page > a {
+
+margin-right: 1rem;
+text-decoration: none;
+
+}
+
+.welcome-page > a:hover {
+
+    background-color: aqua;
+    
+    }
