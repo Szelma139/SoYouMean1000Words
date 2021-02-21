@@ -1,21 +1,27 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
 }
 
+.olay {
+   background: #C6FFDD;  
+   background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);   
+   background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+  
+
+}
 body {
-
-
-
+  background-color: #C779D0;
 }
 
 
-
- 
-.btn-grad {background-image: linear-gradient(to right, #56CCF2 0%, #2F80ED  51%, #56CCF2  100%)}
+.btn-grad {background-image: linear-gradient(to right, #FEAC5E 0%, #C779D0  51%, #FEAC5E  100%)}
 .btn-grad {
    margin: 10px;
-   padding: 15px 45px;
+   padding: 45px 15px;
    text-align: center;
    text-transform: uppercase;
    transition: 0.5s;
@@ -24,6 +30,7 @@ body {
    box-shadow: 0 0 20px #eee;
    border-radius: 10px;
    display: block;
+   font-size: 3rem;
  }
 
  .btn-grad:hover {
@@ -31,32 +38,12 @@ body {
    color: #fff;
    text-decoration: none;
  }
-
-.btn-grad {background-image: linear-gradient(to right, #0cebeb 0%, #20e3b2  51%, #0cebeb  100%)}
-.btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   display: block;
- }
-
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
-
 
 
 
  h1,h2,h3,h4,h5 {
   font-family: 'Poppins', sans-serif;
+  color: #fff;
 
 }
 
@@ -71,4 +58,12 @@ span {
 
 a {
   font-family: 'Poppins', sans-serif;
+}
+
+
+.through {
+  display: flex;
+  margin-left: 5rem;
+  padding: 3rem;
+  
 }

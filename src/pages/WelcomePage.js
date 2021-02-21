@@ -9,16 +9,17 @@ export const WelcomePage = () => {
       <h1>1000 words challenge</h1>
       </div>
         <div className="welcome-page">
+          <div className="welcome-buttons">
           <a href="" className="btn-grad" >
             <i></i> No account
           </a>
 
           <a href="" className="btn-grad">
-            <i></i> I want to login
+            <i></i> Login
           </a>
 
         </div>
-
+        </div>
         </>
     )
 }

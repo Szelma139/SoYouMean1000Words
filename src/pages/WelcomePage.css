@@ -1,10 +1,10 @@
 
 
 .welcome-page {
-
     position: fixed;
     top:40%;
-    left:35%;
+    left:50%;
+    transform: translateX(-50%);
 }
 
 
