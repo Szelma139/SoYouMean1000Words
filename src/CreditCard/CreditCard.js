@@ -4,15 +4,23 @@ import "./CreditCard.css";
 
 import styled from "styled-components";
 
-export const CreditCard = ({number, cardHolder, bankName="You bank name", validThrough = "02/92"}) => {
-  
+export const CreditCard = ({
+  number,
+  cardHolder,
+  bankName = "You bank name",
+  validThrough = "02/92",
+}) => {
   const [isFront, setIsFront] = useState(true);
 
   return (
     <>
       <div className="flip-card">
         <div className={`flip-card-inner ${isFront ? "rotate" : ""}`}>
-          <div className={` ${!isFront ? "hidden" : ""} flip-card-front`}>
+          <div
+            className={` ${
+              !isFront ? "hidden" : ""
+            } flip-card-front card-background`}
+          >
             <h2 className="card-name card-font">{bankName}</h2>
             <div className="card-second-row">
               <img width="48px" src="/images/chip.png" alt="chip" />
@@ -38,8 +46,23 @@ export const CreditCard = ({number, cardHolder, bankName="You bank name", validT
               </div>
             </div>
           </div>
-          <div className={`${isFront ? "hidden" : ""} flip-card-back`}>
-            Back
+          <div
+            className={`${
+              isFront ? "hidden" : ""
+            } flip-card-back card-background`}
+          >
+            <div className="magnetic-strip"></div>
+            <div className="signature-container">
+              <div className="signature">Adam</div>
+
+              <div className="cvc">412</div>
+            </div>
+            <img
+              className="hologram"
+              width="48px"
+              src="images/hologram.png"
+              alt="holo"
+            />
           </div>
         </div>
       </div>
